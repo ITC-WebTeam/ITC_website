@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head> 
+	<title>ITSP demo projects</title>
+    <link rel="stylesheet" href="{% static 'mainwebsite/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mainwebsite/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mainwebsite/css/aos.css' %}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'mainwebsite/css/tooplate-gymso-style.css' %}">
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+	 <!-- MENU BAR -->
+	 <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html"><img src="{% static 'mainwebsite/ITClogoWhite.png' %}" alt="Image Load Error" width="70"
+                    height="45"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc' %}" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_teams' %}" class="nav-link smoothScroll">Team 2021-22</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_clubs' %}" class="nav-link smoothScroll">Clubs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_techteam' %}" class="nav-link smoothScroll">Tech Teams</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_bodies' %}" class="nav-link smoothScroll">Other Bodies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_tl' %}" class="nav-link smoothScroll">Tinkerer's Lab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_contact' %}" class="nav-link smoothScroll">Contact Us</a>
+                    </li>
+			<li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_itsp' %}" class="nav-link smoothScroll">ITSP</a>
+                    </li>
+                    
+                </ul>
+
+
+            </div>
+
+        </div>
+    </nav>
+<style>
+p{
+
+color:black;
+
+}
+a{
+color:blue
+}
+</style>
+<h1 align="center">ITSP demo projects</h1>
+<hr/>
+<ol>
+	<li>
+	<a href="https://distracted-pasteur-a5ca41.netlify.app/">Emotion detection</a> (adapted from "Music to your Mood" by The Clairvoyant Band)
+	<p>
+	A real-time facial emotion recognition model using CNNs.
+	For the facial emotion recognition part, we have used Convolutional Neural Networks which take a real-time image as an input and classify it as one of the 5 emotions - fear, angry, happy, sad, neutral.
+	For this we have also used libraries like NumPy, Pandas, Scikit Plot, Matplotlib, Keras, OpenCV and TensorFlow/PyTorch.
+	For the pre-processing of the input images, we have used OpenCV for face detection and grayscale conversion in order to make it suitable for the model.
+	</p>
+	<p>
+	The webapp also keeps a track of the emotions of all the people accessing the website.
+	</p>
+	</li>
+	
+	<li>
+	<a href="https://streatsmart.herokuapp.com">Street Smart</a>
+	<p>The project aims to create a Machine-Learning based model that will be able to suggest possible methods/modes/routes to help suggest a public transport infrastructure for an under-developed or proposed city in the most efficient way possible using libraries, conventional and non-conventional algorithms.<p>
+	</li>
+</ol>
+</body>
+</html>

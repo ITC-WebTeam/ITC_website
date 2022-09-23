@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>ITC Website</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="{% static 'mainwebsite/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mainwebsite/css/font-awesome.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'mainwebsite/css/aos.css' %}">
+	<link rel="stylesheet" href="{% static 'mainwebsite/css/techteams.css' %}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'mainwebsite/css/tooplate-gymso-style.css' %}">
+    <!--
+Tooplate 2119 Gymso Fitness
+https://www.tooplate.com/view/2119-gymso-fitness
+-->
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="{% url 'main-website:main_website_itc' %}"><img src="{% static 'mainwebsite/ITClogoWhite.png' %}" alt="Image Load Error" width="70"
+                    height="45"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc' %}" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_teams' %}" class="nav-link smoothScroll">Team 2021-22</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_clubs' %}" class="nav-link smoothScroll">Clubs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_techteam' %}" class="nav-link smoothScroll">Tech Teams</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_bodies' %}" class="nav-link smoothScroll">Other Bodies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_tl' %}" class="nav-link smoothScroll">Tinkerers' Lab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'main-website:main_website_itc_contact' %}" class="nav-link smoothScroll">Contact Us</a>
+                 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Work Report
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="{% static 'mainwebsite/itc.pdf' %}" >2021-2022</a>
+                        </div>
+                      </li>            
+                </ul>
+
+
+            </div>
+
+        </div>
+    </nav>
+    <img src="{% static 'mainwebsite/images/bg5.jpg' %}"  alt="background" class="video-back">
+    <br><br><br><br><br>
+    <h2 contenteditable="false" style="font-size:80px;" data-aos="fade-down">Team 2021-22</h2>
+    <br><br><br><br><br>
+    
+    <section class="team21-22">
+        <div class="core-team-img">
+            <img src="{% static 'mainwebsite/images/coreMembersfinal.png' %}" alt=""> 
+        </div>
+
+        <h1>Clubs</h1>
+        <div class="teampage-clubs">
+            <img src="{% static 'mainwebsite/images/teams-poster/Aeromodelling.png' %}" alt="">
+            <img src="{% static 'mainwebsite/images/teams-poster/BIOX.png' %}" alt="">
+            <img src="{% static 'mainwebsite/images/teams-poster/Chemistry.png' %}" alt="">
+            <img src="{% static 'mainwebsite/images/teams-poster/ENERGY.jpg' %}" alt="">
+            <img src="{% static 'mainwebsite/images/teams-poster/ERC.jpg' %}" alt="">
+            <img src="{% static 'mainwebsite/images/teams-poster/Krittika.png' %}" alt="">
+            <img src="{% static 'mainwebsite/images/teams-poster/MnP.png' %}" alt="">
+            <img src="{% static 'mainwebsite/images/teams-poster/WnCC.jpg' %}" alt="">
+        </div>
+        <h1>Tinkerers' Lab</h1>
+        <div class="teampage-clubs">
+            <img src="{% static 'mainwebsite/images/teams-poster/TL.png' %}" alt="">
+        </div>
+        <h1>Web</h1>
+        <div class="teampage-clubs">
+            <img src="{% static 'mainwebsite/images/teams-poster/WEB.jpg' %}" alt="">
+        </div>
+        <h1>Creatives</h1>
+        <div class="teampage-clubs">
+            <img src="{% static 'mainwebsite/images/teams-poster/DESIGN.jpg' %}" alt="">
+            <img src="{% static 'mainwebsite/images/teams-poster/MEDIA AND CREATIVES.jpg' %}" alt="">
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="ml-auto col-lg-4 col-md-5">
+                    <p class="copyright-text">Copyright &copy; ITC, IIT Bombay
+                    </p>
+                </div>
+
+                <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                    <p class="mr-4">
+                        <a href="mailto:gsectech@iitb.ac.in" style="color: rgb(37, 38, 41);"> <i class="fa fa-envelope-o mr-1"></i></a>
+                    </p>
+                    <p class="mr-4">
+                        <a href="tel:918237977913" style="color: rgb(37, 38, 41);"><i class="fa fa-phone mr-1"></i></a>
+                    </p>
+                    <p class="mr-4">
+                        <a href="https://www.facebook.com/tech.iitb" style="color: rgb(37, 38, 41);"><i class="fa fa-facebook mr-1"></i></a>
+                    </p>
+                    <p class="mr-4">
+
+                        <a href="https://www.instagram.com/tech.iitb" style="color: rgb(37, 38, 41);"><i class="fa fa-instagram mr-1"></i></a>
+                    </p>
+                    <p class="mr-4">
+
+                        <a href="https://twitter.com/tech_iitb" style="color: rgb(37, 38, 41);"><i class="fa fa-twitter mr-1"></i></a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="{% static 'mainwebsite/js/jquery.min.js' %}"></script>
+    <script src="{% static 'mainwebsite/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'mainwebsite/js/aos.js' %}"></script>
+    <script src="{% static 'mainwebsite/js/smoothscroll.js' %}"></script>
+    <script src="{% static 'mainwebsite/js/custom.js' %}"></script>
+</body>
+
+</html>
