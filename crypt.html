@@ -14,12 +14,13 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="{% static 'mainwebsite/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'mainwebsite/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'mainwebsite/css/aos.css' %}">
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="{% static 'mainwebsite/css/tooplate-gymso-style.css' %}">
+    <link rel="stylesheet" href="css/tooplate-gymso-style.css">
     <!--
 Tooplate 2119 Gymso Fitness
 https://www.tooplate.com/view/2119-gymso-fitness
@@ -32,7 +33,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
-                    <a class="navbar-brand" href="{% url 'main-website:main_website_itc' %}"><img src="{% static 'mainwebsite/ITClogoWhite.png' %}"    alt="Image Load Error" width="70"
+            <a class="navbar-brand" href="index.html"><img src="ITClogoWhite.png" alt="Image Load Error" width="70"
                     height="45"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -42,33 +43,55 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-lg-auto">
+
                     <li class="nav-item">
-                        <a href="{% url 'main-website:main_website_itc' %}" class="nav-link smoothScroll">Home</a>
+                        <a href="team21_22.html" class="nav-link smoothScroll">Team 2021-22</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="{% url 'main-website:main_website_itc_teams' %}" class="nav-link smoothScroll">Team 2021-22</a>
+                        <a href="clubs.html" class="nav-link smoothScroll">Clubs</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="{% url 'main-website:main_website_itc_clubs' %}" class="nav-link smoothScroll">Clubs</a>
+                        <a href="techTeams.html" class="nav-link smoothScroll">Tech Teams</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="{% url 'main-website:main_website_itc_techteam' %}" class="nav-link smoothScroll">Tech Teams</a>
+                        <a href="otherBodies.html" class="nav-link smoothScroll">Other Bodies</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Labs
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="TL.html">Tinkerer's Lab</a>
+                            <a class="dropdown-item" href="">ChemTL</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portals
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://itc.gymkhana.iitb.ac.in/brpfront">Bill Reimbursement Portal</a>
+                            <a class="dropdown-item" href="https://certificate-portal-itc.netlify.app/">Certificate Portal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link smoothScroll">Contact Us</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="{% url 'main-website:main_website_itc_bodies' %}" class="nav-link smoothScroll">Other Bodies</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Work Report
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="itc.pdf">2021-2022</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="{% url 'main-website:main_website_itc_tl' %}" class="nav-link smoothScroll">Tinkerers' Lab</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'main-website:main_website_itc_contact' %}" class="nav-link smoothScroll">Contact Us</a>
-                    </li>
-                    
-                </ul>
 
 
             </div>
@@ -92,11 +115,11 @@ Loading…
 
                     
     <!-- SCRIPTS -->
-    <script src="{% static 'mainwebsite/js/jquery.min.js' %}"></script>
-    <script src="{% static 'mainwebsite/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'mainwebsite/js/aos.js' %}"></script>
-    <script src="{% static 'mainwebsite/js/smoothscroll.js' %}"></script>
-    <script src="{% static 'mainwebsite/js/custom.js' %}"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
